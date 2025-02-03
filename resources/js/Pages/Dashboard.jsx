@@ -1,26 +1,28 @@
-import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout';
-import { Head } from '@inertiajs/react';
+import * as React from "react";
+import Typography from "@mui/material/Typography";
+import Layout from "./Layout";
 
-export default function Dashboard() {
+
+export default function PermanentDrawerLeft() {
+
     return (
-        <AuthenticatedLayout
-            header={
-                <h2 className="text-xl font-semibold leading-tight text-gray-800">
-                    Dashboard
-                </h2>
-            }
-        >
-            <Head title="Dashboard" />
-
-            <div className="py-12">
-                <div className="mx-auto max-w-7xl sm:px-6 lg:px-8">
-                    <div className="overflow-hidden bg-white shadow-sm sm:rounded-lg">
-                        <div className="p-6 text-gray-900">
-                            You're logged in!
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </AuthenticatedLayout>
+        <Layout>
+            <Typography sx={{ marginBottom: 2 }}>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Rhoncus dolor purus non enim praesent elementum facilisis leo
+                vel. Risus at ultrices mi tempus imperdiet. Semper risus in
+                hendrerit gravida rutrum quisque non tellus. Convallis convallis
+                tellus id interdum velit laoreet id donec ultrices. Odio morbi
+                quis commodo odio aenean sed adipiscing. Amet nisl suscipit
+                adipiscing bibendum est ultricies integer quis. Cursus euismod
+                quis viverra nibh cras. Metus vulputate eu scelerisque felis
+                imperdiet proin fermentum leo. Mauris commodo quis imperdiet
+                massa tincidunt. Cras tincidunt lobortis feugiat vivamus at
+                augue. At augue eget arcu dictum varius duis at consectetur
+                lorem. Velit sed ullamcorper morbi tincidunt. Lorem donec massa
+                sapien faucibus et molestie ac.
+            </Typography>
+        </Layout>
     );
 }
