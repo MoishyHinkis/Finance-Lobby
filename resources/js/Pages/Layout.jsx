@@ -61,7 +61,7 @@ const Layout = ({ children }) => {
                 </List>
                 <List>
                     <ListItem disablePadding>
-                        <ListItemButton
+                        <ListItemButton disabled
                             href="screen-2"
                             selected={currentScreen === "screen-2"}
                             component={Link}
@@ -72,7 +72,7 @@ const Layout = ({ children }) => {
                 </List>
                 <List>
                     <ListItem disablePadding>
-                        <ListItemButton
+                        <ListItemButton disabled
                             href="screen-3"
                             selected={currentScreen === "screen-3"}
                             component={Link}
